@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "electron": "electron src"
+  },
+  "main": "./src/index.js",
+  "dependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "electron": "electron src",
+    "start": "NODE_ENV=dev nodemon --watch ./src/**/* --watch . --exec 'yarn electron'"
+  }
+}
